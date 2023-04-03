@@ -7,27 +7,39 @@
   , initial-scale=1.0">
   <title>Css Selectors</title>
   <style>
+    /* element Select*/
+    body{
+      background-color: #333;
+    }
+
     /* .  is class selector */
     .primary-heading{
       color: blue;
     }
 
     /* # is for id selector */
-    #wellcome{
+    #welcome{
       background-color: #f4f4f4;
     }
 
     /* multiple Selector */
-    #wellcome , #about{
+    #welcome , #about{
       border: 1px solid #ccc;
       padding: 10px;
       margin-bottom: 5px;
     }
+    /* Nested selector */
+    #welcome p {
+      font-size: 15px;
+    }
 
+    #about{
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <div id="wellcome">
+  <div id="welcome">
     <h2 class="primary-heading">Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nam esse blanditiis natus corrupti id nobis earum harum vitae labore!</p>
   </div>
