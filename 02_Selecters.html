@@ -7,19 +7,31 @@
   , initial-scale=1.0">
   <title>Css Selectors</title>
   <style>
-    /* class selector */
+    /* .  is class selector */
     .primary-heading{
-      color: green;
+      color: blue;
+    }
+
+    /* # is for id selector */
+    #wellcome{
+      background-color: #f4f4f4;
+    }
+
+    /* multiple Selector */
+    #wellcome , #about{
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
     }
 
   </style>
 </head>
 <body>
-  <div>
+  <div id="wellcome">
     <h2 class="primary-heading">Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nam esse blanditiis natus corrupti id nobis earum harum vitae labore!</p>
   </div>
-  <div>
+  <div id="about">
     <h2>About</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quam id officiis eius dicta, voluptatem reiciendis eum sed rem reprehenderit!</p>
   </div>
